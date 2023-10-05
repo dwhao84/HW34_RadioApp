@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D36173A22ACAF08A0038BA87 /* FavoriteListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36173A12ACAF08A0038BA87 /* FavoriteListManager.swift */; };
 		D39E12AC2AC063D0007595DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39E12AB2AC063D0007595DB /* AppDelegate.swift */; };
 		D39E12AE2AC063D0007595DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39E12AD2AC063D0007595DB /* SceneDelegate.swift */; };
-		D39E12B02AC063D0007595DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39E12AF2AC063D0007595DB /* ViewController.swift */; };
-		D39E12B32AC063D0007595DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D39E12B12AC063D0007595DB /* Main.storyboard */; };
 		D39E12B52AC063D1007595DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D39E12B42AC063D1007595DB /* Assets.xcassets */; };
 		D39E12B82AC063D1007595DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D39E12B62AC063D1007595DB /* LaunchScreen.storyboard */; };
 		D39E12C32AC063D2007595DB /* HW34_RadioAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39E12C22AC063D2007595DB /* HW34_RadioAppTests.swift */; };
 		D39E12CD2AC063D2007595DB /* HW34_RadioAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39E12CC2AC063D2007595DB /* HW34_RadioAppUITests.swift */; };
 		D39E12CF2AC063D2007595DB /* HW34_RadioAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39E12CE2AC063D2007595DB /* HW34_RadioAppUITestsLaunchTests.swift */; };
+		D39E12DC2AC063F9007595DB /* Button+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39E12DB2AC063F9007595DB /* Button+Ext.swift */; };
+		D39E12E42AC0640A007595DB /* FavoriteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39E12E02AC0640A007595DB /* FavoriteListViewController.swift */; };
+		D39E12E52AC0640A007595DB /* DummyDataForRadioStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39E12E12AC0640A007595DB /* DummyDataForRadioStation.swift */; };
+		D39E12E62AC0640A007595DB /* RadioAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39E12E22AC0640A007595DB /* RadioAppViewController.swift */; };
+		D39E12E92AC06416007595DB /* RadioStationInfos.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39E12E82AC06416007595DB /* RadioStationInfos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D36173A12ACAF08A0038BA87 /* FavoriteListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListManager.swift; sourceTree = "<group>"; };
 		D39E12A82AC063D0007595DB /* HW34_RadioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW34_RadioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D39E12AB2AC063D0007595DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D39E12AD2AC063D0007595DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D39E12AF2AC063D0007595DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D39E12B22AC063D0007595DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D39E12B42AC063D1007595DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D39E12B72AC063D1007595DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D39E12B92AC063D1007595DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +52,11 @@
 		D39E12C82AC063D2007595DB /* HW34_RadioAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW34_RadioAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D39E12CC2AC063D2007595DB /* HW34_RadioAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW34_RadioAppUITests.swift; sourceTree = "<group>"; };
 		D39E12CE2AC063D2007595DB /* HW34_RadioAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW34_RadioAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D39E12DB2AC063F9007595DB /* Button+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Button+Ext.swift"; sourceTree = "<group>"; };
+		D39E12E02AC0640A007595DB /* FavoriteListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteListViewController.swift; sourceTree = "<group>"; };
+		D39E12E12AC0640A007595DB /* DummyDataForRadioStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyDataForRadioStation.swift; sourceTree = "<group>"; };
+		D39E12E22AC0640A007595DB /* RadioAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioAppViewController.swift; sourceTree = "<group>"; };
+		D39E12E82AC06416007595DB /* RadioStationInfos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioStationInfos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +107,11 @@
 		D39E12AA2AC063D0007595DB /* HW34_RadioApp */ = {
 			isa = PBXGroup;
 			children = (
-				D39E12AB2AC063D0007595DB /* AppDelegate.swift */,
-				D39E12AD2AC063D0007595DB /* SceneDelegate.swift */,
-				D39E12AF2AC063D0007595DB /* ViewController.swift */,
-				D39E12B12AC063D0007595DB /* Main.storyboard */,
-				D39E12B42AC063D1007595DB /* Assets.xcassets */,
-				D39E12B62AC063D1007595DB /* LaunchScreen.storyboard */,
+				D39E12EB2AC06455007595DB /* Extension */,
+				D39E12EA2AC06428007595DB /* Supporting */,
 				D39E12B92AC063D1007595DB /* Info.plist */,
+				D39E12E72AC06416007595DB /* Model */,
+				D39E12EC2AC08F9F007595DB /* ViewController */,
 			);
 			path = HW34_RadioApp;
 			sourceTree = "<group>";
@@ -125,6 +131,44 @@
 				D39E12CE2AC063D2007595DB /* HW34_RadioAppUITestsLaunchTests.swift */,
 			);
 			path = HW34_RadioAppUITests;
+			sourceTree = "<group>";
+		};
+		D39E12E72AC06416007595DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D39E12E12AC0640A007595DB /* DummyDataForRadioStation.swift */,
+				D39E12E82AC06416007595DB /* RadioStationInfos.swift */,
+				D36173A12ACAF08A0038BA87 /* FavoriteListManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D39E12EA2AC06428007595DB /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				D39E12AB2AC063D0007595DB /* AppDelegate.swift */,
+				D39E12AD2AC063D0007595DB /* SceneDelegate.swift */,
+				D39E12B42AC063D1007595DB /* Assets.xcassets */,
+				D39E12B62AC063D1007595DB /* LaunchScreen.storyboard */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		D39E12EB2AC06455007595DB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D39E12DB2AC063F9007595DB /* Button+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D39E12EC2AC08F9F007595DB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D39E12E22AC0640A007595DB /* RadioAppViewController.swift */,
+				D39E12E02AC0640A007595DB /* FavoriteListViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +277,6 @@
 			files = (
 				D39E12B82AC063D1007595DB /* LaunchScreen.storyboard in Resources */,
 				D39E12B52AC063D1007595DB /* Assets.xcassets in Resources */,
-				D39E12B32AC063D0007595DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +301,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D39E12B02AC063D0007595DB /* ViewController.swift in Sources */,
+				D39E12E52AC0640A007595DB /* DummyDataForRadioStation.swift in Sources */,
 				D39E12AC2AC063D0007595DB /* AppDelegate.swift in Sources */,
+				D39E12E42AC0640A007595DB /* FavoriteListViewController.swift in Sources */,
+				D36173A22ACAF08A0038BA87 /* FavoriteListManager.swift in Sources */,
+				D39E12E92AC06416007595DB /* RadioStationInfos.swift in Sources */,
+				D39E12DC2AC063F9007595DB /* Button+Ext.swift in Sources */,
+				D39E12E62AC0640A007595DB /* RadioAppViewController.swift in Sources */,
 				D39E12AE2AC063D0007595DB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +345,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D39E12B12AC063D0007595DB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D39E12B22AC063D0007595DB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D39E12B62AC063D1007595DB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +482,6 @@
 				INFOPLIST_FILE = HW34_RadioApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +509,6 @@
 				INFOPLIST_FILE = HW34_RadioApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
