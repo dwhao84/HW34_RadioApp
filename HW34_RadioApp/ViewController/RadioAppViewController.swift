@@ -315,20 +315,27 @@ class RadioAppViewController: UIViewController {
 
             let configuration = UIImage.SymbolConfiguration(pointSize: 30)
             statusBtn.setPreferredSymbolConfiguration(configuration, forImageIn: .normal)
-            statusBtn.frame = CGRect(x: 320, y: 10, width: 60, height: 60)
+//            statusBtn.frame = CGRect(x: 320, y: 10, width: 60, height: 60)
             statusBtn.setImage(UIImage(systemName: "pause.fill"), for: .normal)
             statusBtn.imageView?.contentMode = .scaleToFill
-            statusBtn.addTarget(self, action: #selector(handlePlayAndPause), for: .touchUpInside)
-
             statusBtn.sizeThatFits(CGSize(width: 80, height: 80))
             statusBtn.isUserInteractionEnabled = true
             statusBtn.tintColor = UIColor.darkGray
+            statusBtn.addTarget(self, action: #selector(handlePlayAndPause), for: .touchUpInside)
             playerView.addSubview(statusBtn)
+
+            statusBtn.translatesAutoresizingMaskIntoConstraints = false
+            NSLayoutConstraint.activate([
+                statusBtn.centerXAnchor.constraint(equalTo: playerView.trailingAnchor, constant: -40),
+                statusBtn.centerYAnchor.constraint(equalTo: playerView.centerYAnchor),
+                statusBtn.widthAnchor.constraint(equalTo: playerView.widthAnchor, constant: 60),
+                statusBtn.heightAnchor.constraint(equalTo: playerView.heightAnchor, constant: 60),
+
+            ])
 
             // radioStationTitleLabel
             radioStationTitleLabel.frame = CGRect(x: 90, y: 18, width: 230, height: 30)
             radioStationTitleLabel.font = UIFont.systemFont(ofSize: 20)
-            //radioStationTitleLabel.text = "Loading..."
             radioStationTitleLabel.numberOfLines = 0
             radioStationTitleLabel.adjustsFontSizeToFitWidth = true
             radioStationTitleLabel.textColor = UIColor.darkGray
@@ -337,7 +344,6 @@ class RadioAppViewController: UIViewController {
             // radioStationTitleLabel
             radioStationSubtitleLabel.frame = CGRect(x: 90, y: 45, width: 100, height: 20)
             radioStationSubtitleLabel.font = UIFont.systemFont(ofSize: 12)
-            //radioStationSubtitleLabel.text = "Loading..."
             radioStationSubtitleLabel.numberOfLines = 0
             radioStationSubtitleLabel.adjustsFontSizeToFitWidth = true
             radioStationSubtitleLabel.textColor = UIColor.lightGray
